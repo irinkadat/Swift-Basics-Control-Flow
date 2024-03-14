@@ -86,7 +86,7 @@ print("შედგება ერთიდაიმავე ციფრი�
 
 var numberOfMonths = 1
 
-if numberOfMonths >= 1 && numberOfMonths <= 3 {
+if numberOfMonths >= 1 && numberOfMonths <= 2 || numberOfMonths == 12 {
     print("ზამთარი")
 }
 else if numberOfMonths >= 4 && numberOfMonths <= 6 {
@@ -95,29 +95,29 @@ else if numberOfMonths >= 4 && numberOfMonths <= 6 {
 else if numberOfMonths >= 7 && numberOfMonths <= 9 {
     print("ზაფხული")
 }
-else if numberOfMonths >= 10 && numberOfMonths <= 12 {
+else if numberOfMonths >= 10 && numberOfMonths <= 11 {
     print("შემოდგომა")
 }
 
 
 // მე-2 ვარიანტი
 
-//print("შეიყვანეთ თვის შესაბამისი რიცხვი : ")
-//
-//if let userInput = readLine(), let num = Int(userInput) {
-//    switch num {
-//        case 1...3:
-//            print("ზამთარი")
-//        case 4...6:
-//            print("გაზაფხული")
-//        case 7...9:
-//            print("ზაფხული")
-//        case 10...12:
-//            print("შემოდგომა")
-//        default:
-//            print("შეიყვანეთ სწორი რიცხვი! 1-12")
-//    }
-//}
+print("შეიყვანეთ თვის შესაბამისი რიცხვი : ")
+
+if let userInput = readLine(), let num = Int(userInput) {
+    switch num {
+        case 1...3, 12:
+            print("ზამთარი")
+        case 4...6:
+            print("გაზაფხული")
+        case 7...9:
+            print("ზაფხული")
+        case 10...11:
+            print("შემოდგომა")
+        default:
+            print("შეიყვანეთ სწორი რიცხვი! 1-12")
+    }
+}
 
 
 
