@@ -43,8 +43,6 @@ print("\(txt) reversed is: \(reversedTxt) ")
 //print("\(txt) reverced is: \(reversedTxt) ")
 
 
-
-
 /* 3. while loop-ისა და switch statement-ის გამოყენებით შექმენით უსასრულო შუქნიშანი, რომელიც ბეჭდავს შემდეგნაირად. "🔴->🌕->🟢->🔴->🌕..." */
 
 // please save macbook ram ♻️ :DD
@@ -83,9 +81,6 @@ while ticketCount > 0 {
     print("ბილეთი გაყიდულია, დარჩენილია მხოლოდ \(ticketCount)")
 
 }
-
-
-
 
 
 /* 5. შექმენით array, შეავსეთ ისინი ელემენტებით. შეამოწმეთ და დაბეჭდეთ: "array-ში ყველა ელემენტი განსხვავებულია" ან "array შეიცავს მსგავს ელემენტებს"  (array-ს ტიპს არაქვს მნიშვნელობა.) */
