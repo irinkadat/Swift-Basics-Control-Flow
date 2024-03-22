@@ -63,18 +63,20 @@ enum Weather {
 func recommendCloth(weather: Weather) {
     switch weather {
     case .Sunny(let temp) :
-        print("wear a sleeveless shirt it's \(temp)°C outside")
+        temp >= 25 ? print("Wear shorts and a t-shirt") : print("Wear jeans and a shirt")
     case .Cloudy(let temp):
-        print("wear a sleeve shirt it's \(temp)°C outside")
+        print("Wear a sleeve shirt it's \(temp)°C outside")
     case .Rainy(let temp):
-        print("don't forgot to take some coat it's \(temp)°C outside")
+        print("Don't forgot to take some coat and umbrella it's \(temp)°C outside")
     case .Snowy(let temp):
-        print("wear really warmly it's \(temp)°C outside")
+        print("It's \(temp)°C outside! Bundle up with warm clothes like a jacket ")
+        
     }
 }
-let weather = Weather.Cloudy
-recommendCloth(weather: weather(25))
-recommendCloth(weather: .Sunny(30))
+let weather = Weather.Sunny(30)
+recommendCloth(weather: weather)
+recommendCloth(weather: .Sunny(17))
+recommendCloth(weather: .Cloudy(15))
 
 
 /* 4. შექმენით struct-ი Kanye, ფროფერთებით: album, releaseYear. ამის შემდეგ შექმენით array-ი Kanye-ს ტიპის,
