@@ -113,7 +113,7 @@ printProperAlbum(albumsArr: kannyeAlbums, year: 2007)
  აბრუნებს სტრინგს მნიშვნელობით “lazy ინიციალიზებულია”. მიწვდით ამ ფროფერთის და დაბეჭდეთ მისი მნიშვნელობა */
 
 @propertyWrapper
-struct CachedData {
+struct CachedData{
     
     lazy var value: String = self.initializer()
     let initializer: () -> String
@@ -127,13 +127,11 @@ struct CachedData {
         }
     }
 }
-struct someStruct {
+struct SomeStruct {
     @CachedData var cachedData: String = "lazy ინიციალიზებულია";
 }
-var data = someStruct()
+var data = SomeStruct()
 print(data.cachedData)
-
-
 
 
 // optional
