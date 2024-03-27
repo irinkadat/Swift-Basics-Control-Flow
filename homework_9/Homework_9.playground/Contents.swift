@@ -7,7 +7,7 @@ enum Gender {
 }
 
 /* 2. შექმენით Protocol სახელად SuperBeing. გაუწერეთ მას ფროფერთები- name: String, strength: Int, speed: Int, weakness: String, gender: Gender */
- 
+
 protocol SuperBeing {
     var name: String {get} ;
     var strength: Int {get};
@@ -40,9 +40,6 @@ class Superhero: SuperBeing{
         self.outfitColor = outfitColor
         self.equipment = equipment
         self.vehicle = vehicle
-    }
-    func combat(superVillain: SuperVillain) {
-        print("\(name) შეერკინა და დაამარცხა \(superVillain.name)")
     }
 }
 
@@ -81,8 +78,9 @@ extension Superhero {
     func rescue(victimName: String) {
         print("\(name) არ შეუშინდა სახიფათო სიტუაციას და \(victimName) გადაარჩინა სიკვდილს")
     }
-    func combat(villain: SuperVillain) {
-        print("\(name) შეერკინა და დაამარცხა \(villain.name)")
+    
+    func combat(superVillain: SuperVillain) {
+        print("\(name) შეერკინა და დაამარცხა \(superVillain.name)")
     }
     
 }
